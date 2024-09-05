@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado fijo -->
+    <div class="header-container">
+        <h1>Formulario figuras</h1>
+    </div>
+
+    <!-- Selección de figuras -->
+    <div class="figure-selection">
+        <h2>Seleccione la figura</h2>
+        <form id="selection-figure">
+            <label for="figure-selector">Figura:</label>
+            <select id="figure-selector" name="figure">
+                <option value="" disabled selected>Elija una opción</option>
+                <option value="rectangle">Rectángulo</option>
+                <option value="square">Cuadrado</option>
+                <option value="circle">Círculo</option>
+                <option value="triangle">Triángulo</option>
+            </select>
+        </form>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div class="forms">
+            <!-- Formulario rectángulo -->
+            <div class="form-group form-rectangle">   
+                <form id="form-rectangle-perimeter">
+                    <img src="./Imagenes/Rectangulo.jpg" alt="Rectángulo" class="img-figure">
+                    <h3>Calcular perímetro rectángulo</h3>
+                    <label for="side-1-rectangle">Base:
+                        <input type="number" name="lado" id="base-rectangle" step="any">
+                    </label>
+                    <label for="side-2-rectangle">Altura:
+                        <input type="number" name="lado" id="height-rectangle" step="any">
+                    </label>
+                    <button type="submit">Calcular perímetro</button>
+                </form>
+
+                <form id="form-rectangle-area">
+                    
+                    <h3>Calcular área rectángulo</h3>
+                    <label for="base-rectangle">Base:
+                        <input type="number" name="base" id="base-rectangle-area" step="any">
+                    </label>
+                    <label for="height-rectangle">Altura:
+                        <input type="number" name="area" id="height-rectangle-area" step="any">
+                    </label>
+                    <button type="submit">Calcular área</button>
+                </form>
+            </div>
+
+            <!-- Formulario cuadrado -->
+            <div class="form-group form-square">
+                <form id="form-square-perimeter">
+                    <img src="./Imagenes/Cuadrado.png" alt="Cuadrado" class="img-figure">
+                    <h3>Calcular perímetro cuadrado</h3>
+                    <label for="side-1-square">Lado:
+                        <input type="number" name="lado" id="side-1-square" step="any">
+                    </label>
+                    <button type="submit">Calcular perímetro</button>
+                </form>
+
+                <form id="form-square-area">
+                    <h3>Calcular área cuadrado</h3>
+                    <label for="side-square">Lado:
+                        <input type="number" name="area" id="side-square" step="any">
+                    </label>
+                    <button type="submit">Calcular área</button>
+                </form>
+            </div>
+
+            <!-- Formulario triángulo -->
+            <div class="form-group form-triangle">
+                <form id="form-triangle-perimeter">
+                    <img src="./Imagenes/Triangulo.jpg" alt="Triangulo" class="img-figure">
+                    <h3>Calcular perímetro triángulo</h3>
+                    <label for="side1-triangle">Base:
+                        <input type="number" name="lado" id="side1-triangle" step="any">
+                    </label>
+                    <label for="side2-triangle">Lado 1:
+                        <input type="number" name="lado" id="side2-triangle" step="any">
+                    </label>
+                    <label for="side3-triangle">Lado 2:
+                        <input type="number" name="lado" id="side3-triangle" step="any">
+                    </label>
+                    <button type="submit">Calcular perímetro</button>
+                </form>
+
+                <form id="form-triangle-area">
+                    <h3>Calcular área triángulo</h3>
+                    <label for="base-triangle">Base:
+                        <input type="number" name="base" id="base-triangle" step="any">
+                    </label>
+                    <label for="height-triangle">Altura:
+                        <input type="number" name="area" id="height-triangle" step="any">
+                    </label>
+                    <button type="submit">Calcular área</button>
+                </form>
+            </div>
+
+            <!-- Formulario círculo -->
+            <div class="form-group form-circle">
+                <form id="form-circle-perimeter">
+                    <img src="./Imagenes/Circulo.jpg" alt="Circulo" class="img-figure">
+                    <h3>Calcular perímetro círculo</h3>
+                    <label for="diameter">Radio:
+                        <input type="number" name="diametro" id="radio-perimetro" step="any">
+                    </label>
+                    <button type="submit">Calcular perímetro</button>
+                </form>
+
+                <form id="form-circle-area">
+                    <h3>Calcular área círculo</h3>
+                    <label for="radio">Radio:
+                        <input type="number" name="radio" id="radio" step="any">
+                    </label>
+                    <button type="submit">Calcular área</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>
