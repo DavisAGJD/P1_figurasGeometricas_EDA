@@ -8,7 +8,7 @@ class Circulo extends Figuras {
   calcularPerimetro() {
     if (this.radio) {
       const perimetro = Math.PI * (this.radio * 2);
-      return `El resultado es ${perimetro}`;
+      return `El resultado es ${perimetro.toFixed(2)}`;
     } else {
       return null;
     }
@@ -16,7 +16,7 @@ class Circulo extends Figuras {
   calcularArea() {
     if (this.radio) {
       const area = Math.PI * Math.pow(this.radio, 2);
-      return `El resulado es ${area}`;
+      return `El resulado es ${area.toFixed(2)}`;
     } else {
       return null;
     }
